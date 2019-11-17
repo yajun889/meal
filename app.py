@@ -9,7 +9,8 @@ from flask import render_template
 from flask import request
 from flask import session
 from flask import url_for
-from flask.ext.pymongo import PyMongo
+from flask_pymongo import PyMongo
+
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 
@@ -22,7 +23,6 @@ moment = Moment(app)
 
 config = configparser.ConfigParser()
 config.read('credential.ini')
-app.config['MONGO_DBNAME'] = 'meal_you'
 # Database option 1, remote mlab deployment
 app.config['MONGO_URI'] = config['database']['uri']
 # Database option 2, localhost:27017
