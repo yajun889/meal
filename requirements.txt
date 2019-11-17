@@ -13,7 +13,7 @@ dominate==2.3.0
 ecdsa==0.13
 eventlet==0.24.1
 Fabric==1.12.0
-Flask==0.10.1
+Flask==1.0
 flask-appconfig==0.11.1
 Flask-Bootstrap==3.3.7.0
 Flask-Cors==3.0.6
